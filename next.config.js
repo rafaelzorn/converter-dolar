@@ -1,5 +1,13 @@
 const withImages = require('next-images')
 
 module.exports = withImages({
-  esModule: true
+  esModule: true,
+  async rewrites() {
+    return [
+      {
+        source: '/',
+        destination: '/home',
+      },
+    ]
+  },
 })

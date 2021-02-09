@@ -3,17 +3,17 @@ import Link from 'next/link'
 
 import { Images } from '~/assets'
 import { TEXTS, ROUTES } from '~/constants'
-import { Container, ImageLogo, Title, StyledLink } from './styles'
+import { Nav, ImageLogo, Title, StyledLink } from './styles'
 
 export function CdHeader() {
   return (
-    <Container>
+    <Nav>
       <Link href={ROUTES.HOME}>
         <StyledLink>
           <ImageLogo src={Images.logo} />
           <Title>{TEXTS.CONVERT_DOLLAR}</Title>
         </StyledLink>
       </Link>
-    </Container>
+    </Nav>
   )
 }

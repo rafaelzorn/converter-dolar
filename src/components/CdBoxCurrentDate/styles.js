@@ -11,14 +11,13 @@ export const StyledDate = styled.span`
   margin: 0 auto;
   display: flex;
   padding: 20px;
-  font-size: 16px;
+  font-size: 14px;
   color: ${COLORS.GRAY};
-  letter-spacing: 0.5px;
 
-  @media (max-width: 320px) {
+  @media (max-width: 375px) {
     justify-content: center;
     text-align: center;
     line-height: 1.2;
-    padding: 20px 50px;
+    padding: 20px 60px;
   }
 `

@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 import { COLORS } from '~/styles/colors'
 
-export const Container = styled.nav`
+export const Nav = styled.nav`
   box-shadow: 0 2px 10px 0 rgba(192, 200, 207, 0.22);
   background-color: ${COLORS.WHITE};
   padding: 10px 15px;
@@ -21,7 +21,10 @@ export const ImageLogo = styled.img`
 
 export const Title = styled.h1`
   margin-left: 10px;
-  letter-spacing: 0.5px;
   color: ${COLORS.RIVER_BED};
-  font-size: 24px;
+  font-size: 22px;
+
+  @media (max-width: 375px) {
+    font-size: 18px;
+  }
 `
