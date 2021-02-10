@@ -18,5 +18,6 @@ export const TEXTS = {
   THURSDAY: 'Quinta-feira',
   FRIDAY: 'Sexta-feira',
   SATURDAY: 'Sábado',
-  SUNDAY: 'Domingo'
+  SUNDAY: 'Domingo',
+  LOGO: 'Logo'
 }

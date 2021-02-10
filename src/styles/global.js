@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
 
+// Cd
 import { COLORS } from './colors'
 
 export default createGlobalStyle`

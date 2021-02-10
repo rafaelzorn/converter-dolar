@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 
+// Cd
 import { COLORS } from '~/styles/colors'
 
 export const Nav = styled.nav`
@@ -15,7 +16,7 @@ export const StyledLink = styled.a`
   align-items: center;
 `
 
-export const ImageLogo = styled.img`
+export const WrapperImage = styled.div`
   width: 50px;
 `
 

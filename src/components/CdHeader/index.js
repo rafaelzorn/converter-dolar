@@ -1,17 +1,24 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 // Cd
-import { Images } from '~/assets'
-import { TEXTS, ROUTES } from '~/constants'
-import { Nav, ImageLogo, Title, StyledLink } from './styles'
+import { TEXTS, ROUTES, IMAGES } from '~/constants'
+import { Nav, WrapperImage, Title, StyledLink } from './styles'
 
 export function CdHeader() {
   return (
     <Nav>
       <Link href={ROUTES.HOME}>
         <StyledLink>
-          <ImageLogo src={Images.logo} />
+          <WrapperImage>
+            <Image
+              src={IMAGES.LOGO}
+              width={128}
+              height={128}
+              alt={TEXTS.LOGO}
+            />
+          </WrapperImage>
           <Title>{TEXTS.CONVERT_DOLLAR}</Title>
         </StyledLink>
       </Link>
