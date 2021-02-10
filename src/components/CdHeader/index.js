@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 
+// Cd
 import { Images } from '~/assets'
 import { TEXTS, ROUTES } from '~/constants'
 import { Nav, ImageLogo, Title, StyledLink } from './styles'

@@ -3,11 +3,15 @@ import React from 'react'
 // Cd
 import { CdHead } from './components'
 import { CdHeader, CdBoxCurrentDate } from '~/components'
-import { Container } from './styles'
+import { Section } from './styles'
 
 export default function Home() {
   function renderContent() {
-    return <Container />
+    return (
+      <Section>
+        <p>Home</p>
+      </Section>
+    )
   }
 
   return (
