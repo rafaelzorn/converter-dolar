@@ -19,5 +19,6 @@ export const TEXTS = {
   FRIDAY: 'Sexta-feira',
   SATURDAY: 'Sábado',
   SUNDAY: 'Domingo',
-  LOGO: 'Logo'
+  LOGO: 'Logo',
+  LOGO_CURRENCY_USD: 'Logo da moeda USD'
 }
