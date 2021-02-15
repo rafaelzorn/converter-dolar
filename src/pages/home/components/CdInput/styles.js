@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import SimpleCurrencyInput from 'react-simple-currency'
 
 // Cd
 import { COLORS } from '~/styles/colors'
@@ -35,7 +36,7 @@ export const Symbol = styled.span`
   text-align: right;
 `
 
-export const Input = styled.input`
+export const Input = styled(SimpleCurrencyInput)`
   height: 100%;
   border: none;
   background-color: transparent;

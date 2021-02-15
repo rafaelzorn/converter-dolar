@@ -4,7 +4,14 @@ import React from 'react'
 import { Container, Outer, Inner, Symbol, Input } from './styles'
 
 export function CdInput(props) {
-  const { symbol, onChange, value, maxLength = 18 } = props
+  const {
+    symbol,
+    onInputChange,
+    value,
+    separator = ',',
+    delimiter = '.',
+    precision = 2
+  } = props
 
   return (
     <Container>
@@ -13,10 +20,12 @@ export function CdInput(props) {
           <Symbol>{symbol}</Symbol>
 
           <Input
-            type="text"
-            onChange={onChange}
+            onInputChange={onInputChange}
+            symbol={symbol}
             value={value}
-            maxLength={maxLength}
+            delimiter={delimiter}
+            separator={separator}
+            precision={precision}
           />
         </Inner>
       </Outer>

@@ -2,21 +2,41 @@ import React, { useState } from 'react'
 import Image from 'next/image'
 
 // Cd
-import { TEXTS, IMAGES } from '~/constants'
+import { TEXTS, IMAGES, SYMBOLS } from '~/constants'
 import { CdHead, CdInput } from './components'
 import { CdHeader, CdBoxCurrentDate } from '~/components'
+import { Number } from '~/utils'
 import { Section, Container, WrapperImage, WrapperInput } from './styles'
+import api from '~/services/api'
 
-export default function Home() {
-  const [real, setReal] = useState('0,00')
-  const [foreign, setForeign] = useState('0,00')
+export async function getStaticProps(context) {
+  const response = await api.get('all/USD-BRL')
+
+  const { USD } = response.data
+
+  return {
+    props: {
+      currency: USD
+    }
+  }
+}
+
+export default function Home(props) {
+  const { currency } = props
+
+  const [foreign, setForeign] = useState(100)
+  const [real, setReal] = useState(
+    Number.convertFloatToInt({ value: currency.ask })
+  )
 
   function handleForeing({ value }) {
     setForeign(value)
+    setReal(Number.calculateForeing({ valueCurrency: currency.ask, value }))
   }
 
   function handleReal({ value }) {
     setReal(value)
+    setForeign(Number.calculateReal({ valueCurrency: currency.ask, value }))
   }
 
   function renderInputs() {
@@ -24,16 +44,16 @@ export default function Home() {
       <>
         <WrapperInput>
           <CdInput
-            symbol="US$"
-            onChange={e => handleForeing({ value: e.target.value })}
+            symbol={SYMBOLS.DOLLAR}
+            onInputChange={value => handleForeing({ value })}
             value={foreign}
           />
         </WrapperInput>
 
         <WrapperInput>
           <CdInput
-            symbol="R$"
-            onChange={e => handleReal({ value: e.target.value })}
+            symbol={SYMBOLS.REAL}
+            onInputChange={value => handleReal({ value: value })}
             value={real}
           />
         </WrapperInput>
