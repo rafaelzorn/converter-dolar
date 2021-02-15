@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { COLORS } from '~/styles/colors'
 
 export const Container = styled.div`
-  background-color: #f7fafb;
+  background-color: ${COLORS.CATSKILL_WHITE};
 `
 
 export const StyledDate = styled.span`

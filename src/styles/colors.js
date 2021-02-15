@@ -3,5 +3,6 @@ export const COLORS = {
   GRAY: '#808080',
   RIVER_BED: '#404B55',
   MYSTIC: '#ECF0F3',
-  SILVER_CHALICE: '#A7A7A7'
+  SILVER_CHALICE: '#A7A7A7',
+  CATSKILL_WHITE: '#f7fafb'
 }

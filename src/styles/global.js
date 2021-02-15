@@ -11,7 +11,7 @@ export default createGlobalStyle`
   }
 
   body {
-    background: ${COLORS.MYSTIC};
+    background: ${COLORS.WHITE};
     font-family: 'Lexend Mega', sans-serif;
   }
 

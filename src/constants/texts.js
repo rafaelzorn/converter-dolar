@@ -20,5 +20,7 @@ export const TEXTS = {
   SATURDAY: 'Sábado',
   SUNDAY: 'Domingo',
   LOGO: 'Logo',
-  LOGO_CURRENCY_USD: 'Logo da moeda USD'
+  LOGO_CURRENCY_USD: 'Logo da moeda USD',
+  SECTION_HISTORICAL_CHART_TITLE:
+    'Gráfico do histórico do dólar nos últimos 30 dias'
 }
