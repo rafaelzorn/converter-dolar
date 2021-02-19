@@ -4,5 +4,6 @@ export const COLORS = {
   RIVER_BED: '#404B55',
   MYSTIC: '#ECF0F3',
   SILVER_CHALICE: '#A7A7A7',
-  CATSKILL_WHITE: '#f7fafb'
+  CATSKILL_WHITE: '#f7fafb',
+  FRUIT_SALAD: '#50AE55'
 }

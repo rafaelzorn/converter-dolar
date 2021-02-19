@@ -5,24 +5,30 @@ import { CdHeader, CdBoxCurrentDate } from '~/components'
 import {
   CdHead,
   CdSectionConversion,
-  CdSectionHistoricalChart
+  CdSectionHistoricalChart,
+  CdInfo
 } from './components'
 import api from '~/services/api'
 
-export async function getStaticProps(context) {
-  const response = await api.get('all/USD-BRL')
+export async function getStaticProps() {
+  let response = await api.get('all/USD-BRL')
 
   const { USD } = response.data
 
+  response = await api.get('daily/USD-BRL/30')
+
+  const { data } = response
+
   return {
     props: {
-      currency: USD
+      currency: USD,
+      items: data
     }
   }
 }
 
 export default function Home(props) {
-  const { currency } = props
+  const { currency, items } = props
 
   return (
     <>
@@ -31,7 +37,8 @@ export default function Home(props) {
       <CdBoxCurrentDate />
 
       <CdSectionConversion currency={currency} />
-      <CdSectionHistoricalChart />
+      <CdSectionHistoricalChart items={items} />
+      <CdInfo currency={currency} />
     </>
   )
 }

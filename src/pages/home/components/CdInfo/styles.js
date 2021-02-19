@@ -20,3 +20,10 @@ export const Title = styled.h2`
     margin: 30px auto;
   }
 `
+
+export const ContainerAccordions = styled.div`
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  padding: 0 10px;
+`
