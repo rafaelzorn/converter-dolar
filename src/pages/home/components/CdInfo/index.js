@@ -5,9 +5,10 @@ import { TEXTS } from '~/constants'
 import { Money } from '~/utils'
 import { Section, Title, ContainerAccordions } from './styles'
 import { CdAccordion } from '~/components'
+import { CdTableDollarValues, CdTableDollarExchangeRate } from './components'
 
 export function CdInfo(props) {
-  const { currency } = props
+  const { currency, items } = props
 
   function formatContentFirstAccordion() {
     return TEXTS.HOME_ACCORDION_CONTENT_1_PARAGRAPH_1.replace(
@@ -70,6 +71,9 @@ export function CdInfo(props) {
       <ContainerAccordions>
         <CdAccordion items={accordionItems} />
       </ContainerAccordions>
+
+      <CdTableDollarValues currency={currency} />
+      <CdTableDollarExchangeRate items={items} />
     </Section>
   )
 }

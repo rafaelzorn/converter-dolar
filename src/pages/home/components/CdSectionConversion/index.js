@@ -10,8 +10,6 @@ import { Section, WrapperImage, BoxInputs, WrapperInput } from './styles'
 export function CdSectionConversion(props) {
   const { currency } = props
 
-  console.log(currency.ask)
-
   const [foreign, setForeign] = useState(100)
   const [real, setReal] = useState(
     Number.convertFloatToInt({

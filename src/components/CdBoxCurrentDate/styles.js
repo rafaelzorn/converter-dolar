@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 // Cd
-import { COLORS } from '~/styles/colors'
+import { COLORS } from '~/styles'
 
 export const Container = styled.div`
   background-color: ${COLORS.CATSKILL_WHITE};

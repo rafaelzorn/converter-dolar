@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import SimpleCurrencyInput from 'react-simple-currency'
 
 // Cd
-import { COLORS } from '~/styles/colors'
+import { COLORS } from '~/styles'
 
 export const Container = styled.div`
   border: 1px solid ${COLORS.WHITE};

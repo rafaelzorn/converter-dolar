@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+
 // Cd
 import { Container, Header, Content, Title } from './styles'
 
@@ -23,12 +24,12 @@ export function CdAccordion(props) {
         <div key={index}>
           <Header
             onClick={() => open({ index })}
-            border={items.length - 1 === index ? 0 : 2}
+            border={items.length - 1 === index}
           >
             <Title>{item.title}</Title>
           </Header>
           <Content
-            display={active === index ? 'block' : 'none'}
+            display={active === index}
             dangerouslySetInnerHTML={renderContent({ content: item.content })}
           />
         </div>

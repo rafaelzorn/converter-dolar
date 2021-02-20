@@ -34,7 +34,7 @@ export function formatToday() {
   const month = months[date.getMonth()]
   const year = date.getFullYear()
 
-  return `${dayString}, ${dayNumber} de ${month} de ${year}`
+  return `${dayString}, ${dayNumber} ${TEXTS.IN} ${month} ${TEXTS.IN} ${year}`
 }
 
 export function convertTimestampToDate({ timestamp }) {

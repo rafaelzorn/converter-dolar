@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { COLORS } from '~/styles'
 
 export const Container = styled.div`
-  background-color: #58afff;
+  background-color: ${COLORS.MALIBU};
   display: inline-block;
   width: 100%;
   border: 1px solid #58afff;
@@ -23,14 +23,14 @@ export const Header = styled.div`
   letter-spacing: 0.7px;
   font-weight: bold;
   font-size: 16px;
-  border-bottom: ${props => props.border}px solid ${COLORS.WHITE};
+  border-bottom: ${props => (props.border ? 0 : 2)}px solid ${COLORS.WHITE};
   text-transform: uppercase;
 `
 
 export const Title = styled.h2`
   padding: 15px 10px;
   margin: 0;
-  font-size: 15px;
+  font-size: 14px;
 `
 
 export const Content = styled.div`
@@ -38,12 +38,12 @@ export const Content = styled.div`
   border-right: none;
   background-color: ${COLORS.WHITE};
   padding: 10px 20px;
-  display: ${props => props.display};
+  display: ${props => (props.display ? 'block' : 'none')};
 
   p {
     text-align: justify;
     color: ${COLORS.RIVER_BED};
     margin-bottom: 10px;
-    font-size: 14px;
+    font-size: 13px;
   }
 `

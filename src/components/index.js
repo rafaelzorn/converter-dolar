@@ -1,3 +1,6 @@
 export { CdHeader } from './CdHeader'
 export { CdBoxCurrentDate } from './CdBoxCurrentDate'
 export { CdAccordion } from './CdAccordion'
+export { CdFooter } from './CdFooter'
+export { CdTable } from './CdTable'
+export { CdCookiesBanner } from './CdCookiesBanner'

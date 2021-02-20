@@ -4,7 +4,7 @@ import Head from 'next/head'
 export function CdHead() {
   return (
     <Head>
-      <title>Converter Dólar: Cotação Comercial. Valor e Preço!'</title>
+      <title>Converter Dólar: Cotação Comercial. Valor e Preço!</title>
 
       <meta
         name="description"

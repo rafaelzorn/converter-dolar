@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 // Cd
-import { COLORS } from '~/styles/colors'
+import { COLORS } from '~/styles'
 
 export const Nav = styled.nav`
   box-shadow: 0 2px 10px 0 rgba(192, 200, 207, 0.22);

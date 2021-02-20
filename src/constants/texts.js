@@ -44,5 +44,19 @@ export const TEXTS = {
   HOME_ACCORDION_CONTENT_4_PARAGRAPH_2:
     'Pequenas alterações no dólar podem tornar preços de produtos mais caros ou baratos tanto em lojas físicas como online. Essas alterações também podem influenciar no orçamento de viagens principalmente aos Estados Unidos.',
   HOME_ACCORDION_CONTENT_4_PARAGRAPH_3:
-    'Se estiver interessado em comprar produtos ou viajar, adquira o hábito de acessar sempre o ConverterDolar.compara estar sempre bem informado sobre o preço do dólar do dia.'
+    'Se estiver interessado em comprar produtos ou viajar, adquira o hábito de acessar sempre o ConverterDolar.compara estar sempre bem informado sobre o preço do dólar do dia.',
+  TABLE_CONVERTED_VALUES: 'Tabela de valores em dólar convertidos em real',
+  DOLLAR: 'Dólar',
+  REAL: 'Real',
+  TABLE_DOLLAR_EXCHANGE_RATE: 'Cotação do dólar comercial nos últimos dias',
+  DATE: 'Data',
+  QUOTATION: 'Cotação',
+  TERMS_OF_USE: 'Termos de Uso',
+  PRIVACY_POLICY: 'Política de Privacidade',
+  COPYRIGHT: '@2021 ConverterDolar',
+  ALL_RIGHTS_RESERVED: 'Todos os direitos reservados',
+  ACCEPT: 'Aceito',
+  TEXT_COOKIES:
+    'Nosso site usa cookies para melhorar a navegação. Ao utilizar este site, você concorda com essas condições.',
+  IN: 'de'
 }
