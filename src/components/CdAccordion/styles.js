@@ -38,7 +38,7 @@ export const Content = styled.div`
   border-right: none;
   background-color: ${COLORS.WHITE};
   padding: 10px 20px;
-  display: ${props => (props.display ? 'block' : 'none')};
+  display: ${props => (props.show ? 'block' : 'none')};
 
   p {
     text-align: justify;

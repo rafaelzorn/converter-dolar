@@ -28,7 +28,8 @@ export async function getStaticProps() {
     props: {
       currency: USD,
       items: data
-    }
+    },
+    revalidate: 180
   }
 }
 

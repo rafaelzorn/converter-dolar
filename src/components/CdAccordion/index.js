@@ -29,7 +29,7 @@ export function CdAccordion(props) {
             <Title>{item.title}</Title>
           </Header>
           <Content
-            display={active === index}
+            show={active === index}
             dangerouslySetInnerHTML={renderContent({ content: item.content })}
           />
         </div>
