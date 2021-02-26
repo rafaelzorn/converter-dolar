@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
-import { COLORS } from '~/styles'
+// Cf
+import { COLORS } from '../'
 
 export const Section = styled.section`
   flex: 1 1 0%;
@@ -52,7 +53,8 @@ export const H3 = styled.h3`
 `
 
 export const Ul = styled.ul`
-  padding: 0 0 0 10px;
+  padding: 0;
+  list-style-type: none;
 `
 
 export const Li = styled.li`

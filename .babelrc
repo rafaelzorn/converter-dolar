@@ -3,7 +3,8 @@
     "plugins": [
       ["styled-components", { "ssr": true }],
       ["babel-plugin-root-import", {
-        "rootPathSuffix": "src",
+        "rootPathPrefix": "~",
+        "rootPathSuffix": "src"
       }]
     ]
 }

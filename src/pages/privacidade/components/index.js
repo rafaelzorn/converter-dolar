@@ -1,1 +1,0 @@
-export { CdHead } from './CdHead'

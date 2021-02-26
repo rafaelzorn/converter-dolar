@@ -1,4 +1,5 @@
 import React from 'react'
+import Head from 'next/head'
 
 // Cd
 import {
@@ -7,10 +8,28 @@ import {
   CdFooter,
   CdCookiesBanner
 } from '~/components'
-import { Section, Container, H1, Text, H2, H3, Ul, Li } from './styles'
-import { CdHead } from './components'
+import {
+  Section,
+  Container,
+  H1,
+  Text,
+  H2,
+  H3,
+  Ul,
+  Li
+} from '~/styles/pages/terms-of-use.js'
 
 export default function Terms() {
+  function renderHead() {
+    return (
+      <Head>
+        <title>Política de Privacidade - Converter Dólar</title>
+
+        <link rel="canonical" href="https://converterdolar.com/privacidade" />
+      </Head>
+    )
+  }
+
   function renderContent() {
     return (
       <Section>
@@ -150,7 +169,8 @@ export default function Terms() {
 
   return (
     <>
-      <CdHead />
+      {renderHead()}
+
       <CdHeader />
       <CdBoxCurrentDate />
 
