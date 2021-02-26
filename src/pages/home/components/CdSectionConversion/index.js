@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 // Cd
 import { Number } from '~/utils'
-import { TEXTS, IMAGES, SYMBOLS } from '~/constants'
+import { IMAGES, SYMBOLS } from '~/constants'
 import { CdInput } from '../'
 import { Section, WrapperImage, BoxInputs, WrapperInput } from './styles'
 
@@ -56,7 +56,7 @@ export function CdSectionConversion(props) {
           src={IMAGES.FLAG_USD}
           width={100}
           height={100}
-          alt={TEXTS.LOGO_CURRENCY_USD}
+          alt="Logo da moeda USD"
         />
       </WrapperImage>
 

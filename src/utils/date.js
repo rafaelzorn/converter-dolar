@@ -1,32 +1,29 @@
-// Cd
-import { TEXTS } from '~/constants'
-
 export function formatToday() {
   const date = new Date()
 
   const months = [
-    TEXTS.JANUARY,
-    TEXTS.FEBRUARY,
-    TEXTS.MARCH,
-    TEXTS.APRIL,
-    TEXTS.MAY,
-    TEXTS.JUNE,
-    TEXTS.JULY,
-    TEXTS.AUGUST,
-    TEXTS.SEPTEMBER,
-    TEXTS.OCTOBER,
-    TEXTS.NOVEMBER,
-    TEXTS.DECEMBER
+    'Janeiro',
+    'Fevereiro',
+    'Março',
+    'Abril',
+    'Maio',
+    'Junho',
+    'Julho',
+    'Agosto',
+    'Setembro',
+    'Outubro',
+    'Novembro',
+    'Dezembro'
   ]
 
   const daysOfWeek = [
-    TEXTS.MONDAY,
-    TEXTS.TUESDAY,
-    TEXTS.WENDNESDAY,
-    TEXTS.THURSDAY,
-    TEXTS.FRIDAY,
-    TEXTS.SATURDAY,
-    TEXTS.SUNDAY
+    'Segunda-feira',
+    'Terça-feira',
+    'Quarta-feira',
+    'Quinta-feira',
+    'Sexta-feira',
+    'Sábado',
+    'Domingo'
   ]
 
   const dayString = daysOfWeek[date.getDay() - 1]
@@ -34,7 +31,7 @@ export function formatToday() {
   const month = months[date.getMonth()]
   const year = date.getFullYear()
 
-  return `${dayString}, ${dayNumber} ${TEXTS.IN} ${month} ${TEXTS.IN} ${year}`
+  return `${dayString}, ${dayNumber} de ${month} de ${year}`
 }
 
 export function convertTimestampToDate({ timestamp }) {

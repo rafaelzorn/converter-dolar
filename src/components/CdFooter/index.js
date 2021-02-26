@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 
 // Cd
-import { TEXTS, ROUTES } from '~/constants'
+import { ROUTES } from '~/constants'
 import { Footer, Container, Content, Span, StyledLink } from './styles'
 
 export function CdFooter() {
@@ -10,15 +10,15 @@ export function CdFooter() {
     <Footer>
       <Container>
         <Content>
-          <Span>{TEXTS.COPYRIGHT}</Span>
-          <Span occult>- {TEXTS.ALL_RIGHTS_RESERVED}</Span>
+          <Span>@2021 ConverterDolar</Span>
+          <Span occult>- Todos os direitos reservados</Span>
           <Span occult>|</Span>
           <Link href={ROUTES.PRIVACY}>
-            <StyledLink occult>{TEXTS.PRIVACY_POLICY}</StyledLink>
+            <StyledLink occult>Política de Privacidade</StyledLink>
           </Link>
           <Span occult>|</Span>
           <Link href={ROUTES.TERMS}>
-            <StyledLink>{TEXTS.TERMS_OF_USE}</StyledLink>
+            <StyledLink>Termos de Uso</StyledLink>
           </Link>
         </Content>
       </Container>

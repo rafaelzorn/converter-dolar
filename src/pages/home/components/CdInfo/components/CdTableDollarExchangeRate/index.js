@@ -2,7 +2,7 @@ import React from 'react'
 
 // Cd
 import { CdTable } from '~/components'
-import { TEXTS, SYMBOLS } from '~/constants'
+import { SYMBOLS } from '~/constants'
 import { Date, Money } from '~/utils'
 import { Container, Title } from './styles'
 
@@ -10,7 +10,7 @@ export function CdTableDollarExchangeRate(props) {
   const { items } = props
 
   function renderHeader() {
-    return [TEXTS.DATE, TEXTS.QUOTATION]
+    return ['Data', 'Cotação']
   }
 
   function renderBody() {
@@ -30,7 +30,7 @@ export function CdTableDollarExchangeRate(props) {
 
   return (
     <Container>
-      <Title>{TEXTS.TABLE_DOLLAR_EXCHANGE_RATE}</Title>
+      <Title>Cotação do dólar comercial nos últimos dias</Title>
 
       <CdTable header={renderHeader()} body={renderBody()} />
     </Container>

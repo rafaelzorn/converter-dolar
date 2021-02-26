@@ -2,7 +2,7 @@ import React from 'react'
 
 // Cd
 import { CdTable } from '~/components'
-import { TEXTS, SYMBOLS } from '~/constants'
+import { SYMBOLS } from '~/constants'
 import { Number, Money } from '~/utils'
 import { Container, Title } from './styles'
 
@@ -10,7 +10,7 @@ export function CdTableDollarValues(props) {
   const { currency } = props
 
   function renderHeader() {
-    return [TEXTS.DOLLAR, TEXTS.REAL]
+    return ['Dólar', 'Real']
   }
 
   function renderBody() {
@@ -47,7 +47,7 @@ export function CdTableDollarValues(props) {
 
   return (
     <Container>
-      <Title>{TEXTS.TABLE_CONVERTED_VALUES}</Title>
+      <Title>Tabela de valores em dólar convertidos em real</Title>
 
       <CdTable header={renderHeader()} body={renderBody()} />
     </Container>

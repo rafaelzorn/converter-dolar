@@ -8,5 +8,6 @@ export const COLORS = {
   FRUIT_SALAD: '#50AE55',
   MALIBU: '#58AFFF',
   SHARK: '#212225',
-  PALE_SKY: '#637282'
+  PALE_SKY: '#637282',
+  SLATE_GRAY: '#708394'
 }

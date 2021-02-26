@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 
 // Cd
-import { TEXTS, ROUTES, COOKIES } from '~/constants'
+import { ROUTES, COOKIES } from '~/constants'
 import {
   Container,
   Content,
@@ -31,18 +31,19 @@ export function CdCookiesBanner() {
       <Content>
         <BoxText>
           <Text>
-            {TEXTS.TEXT_COOKIES}{' '}
+            Nosso site usa cookies para melhorar a navegação. Ao utilizar este
+            site, você concorda com essas condições.{' '}
             <Link href={ROUTES.PRIVACY}>
-              <StyledLink>{TEXTS.PRIVACY_POLICY}</StyledLink>
+              <StyledLink>Política de Privacidade</StyledLink>
             </Link>
             {' - '}
             <Link href={ROUTES.TERMS}>
-              <StyledLink>{TEXTS.TERMS_OF_USE}</StyledLink>
+              <StyledLink>Termos de Uso</StyledLink>
             </Link>
           </Text>
         </BoxText>
         <BoxButton>
-          <Button onClick={() => handleAcceptCookies()}>{TEXTS.ACCEPT}</Button>
+          <Button onClick={() => handleAcceptCookies()}>Aceito</Button>
         </BoxButton>
       </Content>
     </Container>
